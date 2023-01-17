@@ -63,7 +63,7 @@ if __name__ == "__main__":
         number = number + 1
         check_balance(address, number, web3) # проверяет баланс ETH
 
-    cprint('\a\n/// start withdrawing...', 'white')
+   # cprint('\a\n/// start withdrawing...', 'white')
     for wallet in wallets_list:
         address = web3.toChecksumAddress(wallet)
         amount_to_withdrawal = round(random.uniform(0.001, 0.002), 6) # amount from ... to ...
